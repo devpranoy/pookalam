@@ -26,8 +26,8 @@ def home():
             data1 = random.choice(files)
             data1 = str(data1)
             
-            data2 = data1.split('/')
-            data = data2[-1]
+            
+            data = data1
             print(data)
             return render_template("result.html",data=data)
 
