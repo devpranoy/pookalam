@@ -18,7 +18,7 @@ def home():
         try:
             for item in request.form:
                 colors.append(item)
-            data = pd.read_csv("pook.csv")
+            data = pd.read_csv("1.csv")
             for index, row in data.iterrows():
                 if row['color'] in colors:
                     files.append(row['file'])
@@ -26,8 +26,8 @@ def home():
             data1 = random.choice(files)
             data1 = str(data1)
             
-            
-            data = data1
+            data2 = data1.split('/')
+            data = data2[-1]
             print(data)
             return render_template("result.html",data=data)
 
