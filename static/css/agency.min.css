@@ -188,7 +188,7 @@ padding: 0 0 0 0px;
 
 input#thing1[type=checkbox]:checked + label
 {
-border-color: red;
+border-color: blue;
 border-style: solid;
 height: 100px;
 width: 100px;
@@ -197,7 +197,7 @@ padding: 0 0 0 0px;
 }
 input#thing2[type=checkbox]:checked + label
 {
-border-color: red;
+border-color: blue;
 border-style: solid;
 height: 100px;
 width: 100px;
@@ -206,7 +206,7 @@ padding: 0 0 0 0px;
 }
 input#thing3[type=checkbox]:checked + label
 {
-border-color: red;
+border-color:blue;
 border-style: solid;
 height: 100px;
 width: 100px;
@@ -215,7 +215,7 @@ padding: 0 0 0 0px;
 }
 input#thing4[type=checkbox]:checked + label
 {
-border-color: red;
+border-color: blue;
 border-style: solid;
 height: 100px;
 width: 100px;
@@ -225,7 +225,7 @@ padding: 0 0 0 0px;
 
 input#thing5[type=checkbox]:checked + label
 {
-border-color: red;
+border-color: blue;
 border-style: solid;
 height: 100px;
 width: 100px;
@@ -235,7 +235,7 @@ padding: 0 0 0 0px;
 
 input#thing6[type=checkbox]:checked + label
 {
-border-color: red;
+border-color: blue;
 border-style: solid;
 height: 100px;
 width: 100px;
