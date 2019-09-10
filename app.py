@@ -18,7 +18,7 @@ def home():
         try:
             for item in request.form:
                 colors.append(item)
-            data = pd.read_csv("1.csv")
+            data = pd.read_csv("pook.csv")
             for index, row in data.iterrows():
                 if row['color'] in colors:
                     files.append(row['file'])
@@ -42,7 +42,7 @@ def home():
 
 
 if __name__=='__main__':
-	app.run(debug=True,host="0.0.0.0",port=8000) 
+	app.run(threaded=True,host="0.0.0.0",port=80) 
     #use threaded=True instead of debug=True for production
     # use port =80 for using the http port
 
