@@ -16,18 +16,18 @@ def home():
         colors=[]
         files = []
         color1 =["Red","Green","White","Orange","Pink","Yellow"]
-        try:
-            for item in request.form:
-                colors.append(item)
-        except:
-            return redirect(url_for('home'))
+        for item in request.form:
+            colors.append(item)
         data = pd.read_csv("pook.csv")
         if len(colors) == 0:
             colors.append(color1[random.randint(0,5)])
         for index, row in data.iterrows():
             if row['color'] in colors:
                 files.append(row['file'])
-        data1 = random.choice(files)
+        try:
+            data1 = files[random.randint(0,len(files))]
+        except:
+            return redirect(url_for('home'))
         data1 = str(data1)
         data2 = data1.split('/')
         data = data2[-1]
