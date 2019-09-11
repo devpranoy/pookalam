@@ -16,8 +16,11 @@ def home():
         colors=[]
         files = []
         color1 =["Red","Green","White","Orange","Pink","Yellow"]
-        for item in request.form:
-            colors.append(item)
+        try:
+            for item in request.form:
+                colors.append(item)
+        except:
+            return redirect(url_for('home'))
         data = pd.read_csv("pook.csv")
         if len(colors) == 0:
             colors.append(color1[random.randint(0,5)])
