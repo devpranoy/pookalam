@@ -71,7 +71,7 @@ def coloriser(filename):
 	csvFile.close()
 		
 	
-for filename in Path('/Users/pranoy/Desktop/pookalam/static/pookalams').glob('**/*.jpg'):
+for filename in Path('/home/pranoy/Desktop/pookalam/static/pookalams').glob('**/*.jpg'):
 	print(filename)
 	coloriser(filename)
 
