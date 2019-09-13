@@ -64,7 +64,7 @@ def coloriser(filename):
 		if items == "yellow":
 			row[7] = "1"
 		if items == "purple":
-			row[8] == "1"
+			row[8] = "1"
 	with open('onehotencoded.csv', 'a') as csvFile:
     		writer = csv.writer(csvFile)
     		writer.writerow(row)
